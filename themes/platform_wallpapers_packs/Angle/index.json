@@ -582,6 +582,11 @@
       "filename": "triforce.png"
     },
         {
+      "matchPlatformShortname": "zx81",
+      "matchPlatformUniqueId": "zx81",
+      "filename": "zx81.png"
+    },
+        {
       "matchPlatformShortname": "ndsi",
       "matchPlatformUniqueId": "ndsi",
       "filename": "ndsi.png"
