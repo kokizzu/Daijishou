@@ -1,8 +1,8 @@
 {
   "databaseVersion": 14,
-  "revisionNumber": 6,
+  "revisionNumber": 7,
   "platform": {
-    "name": "Microsoft - XBox 360",
+    "name": "Microsoft - Xbox 360",
     "uniqueId": "xbox360",
     "shortname": "xbox360",
     "description": null,
@@ -43,11 +43,21 @@
       "extra": ""
     },
     {
-      "name": "xbox360 - X360 Mobile",
+      "name": "xbox360 - X360 Mobile (Old)",
       "uniqueId": "xbox360.emu.x360.mobile",
       "description": "",
       "acceptedFilenameRegex": "^(.*)\\.(?:iso|xex)$",
       "amStartArguments": "-n emu.x360.mobile/.X360MobileGameLaunchActivity\n -d {file.uri}",
+      "killPackageProcesses": false,
+      "killPackageProcessesWarning": false,
+      "extra": ""
+    },
+    {
+      "name": "xbox360 - X360 Mobile (Launch URL)",
+      "uniqueId": "xbox360.emu.x360mobile.com",
+      "description": "",
+      "acceptedFilenameRegex": "^(.*)\\.(?:x360url)$",
+      "amStartArguments": "-n emu.x360mobile.com/.MainActivity\n -f 0x10008000\n -d {tags.x360url}",
       "killPackageProcesses": false,
       "killPackageProcessesWarning": false,
       "extra": ""
